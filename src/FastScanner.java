@@ -3,6 +3,7 @@ import java.util.*;
 
 class FastScanner {
 
+
 	private InputStream _stream;
 	private byte[] _buf = new byte[1024];
 	private int _curChar;
