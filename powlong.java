@@ -1,0 +1,15 @@
+// /////////////////////////////////////
+// powlong
+// a ^ b % mod
+long powlong(long a, long b, long mod) {
+	long ret = 1;
+	while (b != 0) {
+		if ((b & 1) == 1) {
+			ret *= a;
+			ret %= mod;
+		}
+		b >>= 1;
+		a = a * a % mod;
+	}
+	return ret;
+}
